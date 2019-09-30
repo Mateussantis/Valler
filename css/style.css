@@ -403,18 +403,12 @@ h2 {
 /* Sobre */
 
 .banner_sobre {
-    background-image: url(../img/cestabasica.jpg);
+    background-image: url(../img/cestabasica.jpg); //
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px; 
     position: relative;
     background-position: center;
-}
-
-.banner_cobertura {
-    background: rgba(255, 238, 2, 0.5);
-    position: relative;
-    height: 400px;
 } 
 
 .sobre_texto {
