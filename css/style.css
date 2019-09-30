@@ -15,9 +15,7 @@
 }
 
 /* GERAL */
-
 /*HEADER----------------------------------------------*/
-
 header nav ul {
     display: flex;
     justify-content: space-between;
@@ -29,9 +27,7 @@ header nav ul {
 }
 
 /* HEADER*/
-
 /* MENU */
-
 header nav ul li, a {
     font-size: 0.9em;
     font-family: lato;
@@ -302,8 +298,15 @@ h2 {
 
 /* Pagina ESCOLHA*/
 
+.escolha_h2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+}
+
 .redondo2 {
-    border-radius: 60%;
+    border-radius: 50%;
     background-color: white;
     color: black;
     text-align: center;
@@ -316,7 +319,7 @@ h2 {
     flex-direction: column;
     color: gray;
     margin: auto;
-    margin-top: 190px;
+    margin-top: 90px;
     margin-bottom: 20px;
     background: linear-gradient(to top, #FF5700 0%, #FF5700 50%, #ffffff 50%, #ffffff 100%);
     -webkit-box-shadow: 6px 16px 36px -17px rgba(69, 69, 69, 1);
@@ -403,17 +406,29 @@ h2 {
 /* Sobre */
 
 .banner_sobre {
-    background-image: url(../img/cestabasica.jpg); //
+    background-image: linear-gradient(rgba(255, 115, 0, 0.5),rgba(255, 174, 0, 0.5)),  url(../img/cestabasica.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px; 
     position: relative;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.sobre_h1 {
+    position: absolute;
+    color: white;
+    font-size: 70px;
+    text-align: center;
 } 
 
 .sobre_texto {
-    margin-bottom: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     text-align: justify;
+    font-size: 20px;
 }
 
 /* Sobre */
