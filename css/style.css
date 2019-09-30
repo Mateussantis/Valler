@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+/* Variaveis de cores */
+
+:root {
+    --laranja-valer: #FF5700;
+    --laranja-claro: #FF7934;
+    --cinza-fonte: #707070;
+    --cinza-fumaca: #f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* GERAL */
+
+/*HEADER----------------------------------------------*/
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-valer {
+    margin: 20px 30px 20px 0px;
+    height: 30px;
+}
+
+/* HEADER*/
+
+/* MENU */
+
+header nav ul li, a {
+    font-size: 0.9em;
+    font-family: lato;
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+header nav ul li a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px 0px 5px 0px;
+}
+
+.login a {
+    display: flex;
+    flex-direction: row;
+}
+
+.barra-desktop {
+    justify-content: space-between;
+    display: flex;
+}
+
+.barra-cima {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+.barra-desktop nav ul li a {
+    color: var(--cinza-fonte);
+}
+
+.barra-desktop nav ul .login {
+    color: var(--laranja-valer);
+}
+
+.barra-desktop nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.barra-desktop nav ul li:hover {
+    border-bottom: solid 2px var(--laranja-valer);
+}
+
+.sub-barra ul li a {
+    color: var(--laranja-valer);
+}
+
+.background-laranja {
+    background-color: var(--laranja-valer);
+}
+
+.background-branco {
+    background-color: white;
+}
+
+.categorias {
+    background-color: white;
+    padding: 30px;
+    border: none;
+    cursor: pointer;
+    color: var(--laranja-valer);
+}
+
+.barra_pesquisa {
+    border: solid 1px white;
+    border-radius: 30px;
+    padding: 10px;
+    color: var(--cinza-fonte);
+    background-color: white;
+    flex-grow: 1;
+    margin: 0px 200px 0px 20px;
+}
+
+.barra_pesquisa input {
+    background-color: transparent;
+    color: var(--cinza-fonte);
+    border: none;
+}
+
+/* Final MENU*/
+
+/*Barra de pesquisa e botão de categorias mobile*/
+
+.barra_pesquisa-mobile {
+    display: flex;
+    border: solid 1px var(--cinza-fumaca);
+    border-radius: 30px;
+    background-color: var(--cinza-fumaca);
+    padding: 8px;
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.barra_pesquisa-mobile input {
+    background-color: transparent;
+    border: none;
+}
+
+.barra_pesquisa-mobile i {
+    color: var(--cinza-fonte);
+    margin-right: 8px;
+}
+
+.search-cat a i {
+    margin-right: 8px;
+}
+
+.search-cat {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.search-cat a {
+    border: solid 1px var(--laranja-valer);
+    border-radius: 30px;
+    background-color: var(--laranja-valer);
+    padding: 8px;
+}
+
+/*Barra de pesquisa e botão de categorias mobile*/
+
+/*----------------------------------------------*/
+
+body {
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+/* FUNDOS */
+
+.container_escolha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.fundo_escolha {
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-position: center;
+}
+
+.fundo_busca {
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Final FUNDOS */
+
+/* Titulo das telas Mob */
+
+.container h1 {
+    color: var(--laranja-claro);
+    font-size: 40px;
+    margin-bottom: 35px;
+    margin-top: 50px;
+    text-align: center;
+    /* ALTERADO!!!!!!!!*/
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Tela BUSCA  */
+
+.redondo {
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    width: 80%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: gray;
+    margin: auto;
+    margin-top: 120px;
+    -webkit-box-shadow: 6px 16px 36px -17px rgba(69, 69, 69, 1);
+    -moz-box-shadow: 6px 16px 36px -17px rgba(69, 69, 69, 1);
+    box-shadow: 6px 16px 36px -17px rgba(69, 69, 69, 1);
+    animation: blinker 4s linear infinite;
+    animation-duration: 3s;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fd7200;
+    width: 100%;
+    height: 730px;
+}
+
+.fotor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+}
+
+.buscatexto {
+    margin-top: 70px;
+    color: white;
+}
+
+/* Final BUSCA */
+
+/* Ícone da loja 'i' */
+
+.fa-store-alt {
+    font-size: 70px;
+    margin-bottom: 40px;
+    color: deeppink;
+}
+
+.redondo h3 {
+    margin-top: 120px;
+}
+
+.fa-money-check {
+    margin: auto;
+    color: gray;
+    font-size: 70px;
+    margin-top: 40px;
+}
+
+.t2 h4 {
+    color: white;
+    font-size: 25px;
+    margin-right: 20px;
+    line-height: 1.0em;
+}
+
+/* Pagina ESCOLHA*/
+
+.redondo2 {
+    border-radius: 60%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    width: 70%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: gray;
+    margin: auto;
+    margin-top: 190px;
+    margin-bottom: 20px;
+    background: linear-gradient(to top, #FF5700 0%, #FF5700 50%, #ffffff 50%, #ffffff 100%);
+    -webkit-box-shadow: 6px 16px 36px -17px rgba(69, 69, 69, 1);
+    -moz-box-shadow: 6px 16px 36px -17px rgba(69, 69, 69, 1);
+    box-shadow: 6px 16px 36px -17px rgba(69, 69, 69, 1);
+    transform: rotate(-10deg);
+}
+
+.t1 {
+    text-align: center;
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.t1 .fa-shopping-bag {
+    font-size: 70px;
+    color: #FF5700;
+}
+
+.t1 h4 {
+    margin-left: 20px;
+    font-size: 25px;
+    line-height: 1.0em;
+    color: #FF5700;
+}
+
+.t2 {
+    text-align: center;
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.fa-store {
+    font-size: 70px;
+    color: white;
+}
+
+/* ESCOLHA */
+
+/* CODIGO DE BARRAS */
+
+.imgcodigo {
+    max-width: 65%;
+    max-height: 40%;
+    margin-top: 25px;
+}
+
+.cardcodigo {
+    width: 100%;
+    height: 580px;
+    background-color: white;
+    -webkit-box-shadow: 9px 13px 300px 0px rgba(176, 176, 176, 1);
+    -moz-box-shadow: 9px 13px 300px 0px rgba(176, 176, 176, 1);
+    box-shadow: 9px 13px 300px 0px rgba(176, 176, 176, 1);
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: gray;
+    border-radius: 4px;
+}
+
+.cardcodigo p {
+    font-size: 26px;
+    text-align: center;
+}
+
+.cardcodigo img {
+    width: 270px;
+    height: 270px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* CODIGO DE BARRAS */
+
+/* Sobre */
+
+.banner_sobre {
+    background-image: url(../img/cestabasica.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px; 
+    position: relative;
+    background-position: center;
+}
+
+.banner_cobertura {
+    background: rgba(255, 238, 2, 0.5);
+    position: relative;
+    height: 400px;
+} 
+
+.sobre_texto {
+    margin-bottom: 80px;
+    text-align: justify;
+}
+
+/* Sobre */
+
+/* Codigo Vitao Ousado*/
+
+.container {
+    margin: auto;
+    width: 90vw;
+}
+
+body {
+    background-color: var(--cinza-fumaca);
+    font-family: lato;
+}
+
+/*--------------------------------------------*/
+
+/*MAIN----------------------------------------*/
+
+/*-------------------------------------------------*/
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    header {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    .barra-desktop {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    header {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    .barra-desktop {
+        display: none;
+    }
+    .redondo {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .barra-mobile {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .barra-mobile {
+        display: none;
+    }
+    .container {
+        width: 70vw;
+    }
+    .redondo2 {
+        width: 700px;
+        height: 600px;
+        margin-top: 85px;
+        transform: rotate(-4deg);
+    }
+    .t1 {
+        margin-top: 85px;
+    }
+    .t1 h4 {
+        font-size: 30px;
+    }
+    .t1 .fa-shopping-bag {
+        font-size: 135px;
+    }
+    .t2 {
+        margin-bottom: 85px;
+    }
+    .t2 h4 {
+        font-size: 30px;
+    }
+    .t2 .fa-store {
+        font-size: 135px;
+    }
+    .redondo {
+        width: 500px;
+        height: 400px;
+        margin-top: 50px;
+    }
+    .fundoteste {
+        height: 71vh;
+    }
+    .redondo h3 {
+        margin-top: 170px;
+    }
+    .fa-store-alt {
+        margin-bottom: 70px;
+    }
+    .fa-money-check {
+        margin-top: 20px;
+    }
+    .buscatexto {
+        margin-top: 170px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .vencimento p {
+        margin-top: 85px;
+    }
+    .fundofilho {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 70vh;
+        background-position: center;
+    }
+    .redondo2 {
+        width: 750px;
+        height: 600px;
+        margin-top: 85px;
+        transform: rotate(-4deg);
+    }
+    .t1 {
+        margin-top: 80px;
+    }
+    .t1 h4 {
+        font-size: 40px;
+    }
+    .t1 .fa-shopping-bag {
+        font-size: 150px;
+    }
+    .t2 {
+        margin-bottom: 80px;
+    }
+    .t2 h4 {
+        font-size: 40px;
+    }
+    .t2 .fa-store {
+        font-size: 150px;
+    }
+    h1 {
+        margin: 10px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}
