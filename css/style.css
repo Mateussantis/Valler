@@ -15,7 +15,23 @@
 }
 
 /* GERAL */
+
+
+
+.container {
+    margin: auto;
+    width: 90vw;
+}
+
+body {
+    background-color: var(--cinza-fumaca);
+    font-family: lato;
+}
+
+
+
 /*HEADER----------------------------------------------*/
+
 header nav ul {
     display: flex;
     justify-content: space-between;
@@ -27,7 +43,9 @@ header nav ul {
 }
 
 /* HEADER*/
+
 /* MENU */
+
 header nav ul li, a {
     font-size: 0.9em;
     font-family: lato;
@@ -168,36 +186,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-/* FUNDOS */
 
-.container_escolha {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    font-family: 'Lato', sans-serif;
-}
-
-.fundo_escolha {
-    background-image: url(../img/background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 90vh;
-    background-position: center;
-}
-
-.fundo_busca {
-    background-image: url(../img/background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 90vh;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* Final FUNDOS */
 
 /* Titulo das telas Mob */
 
@@ -216,13 +205,24 @@ h2 {
 
 /* Tela BUSCA  */
 
+.fundo_busca {
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .redondo {
     border-radius: 50%;
     background-color: white;
     color: black;
     text-align: center;
-    width: 80%;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -298,6 +298,22 @@ h2 {
 
 /* Pagina ESCOLHA*/
 
+.container_escolha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.fundo_escolha {
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-position: center;
+}
+
 .escolha_h2 {
     color: white;
     font-size: 30px;
@@ -310,8 +326,8 @@ h2 {
     background-color: white;
     color: black;
     text-align: center;
-    width: 70%;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -319,7 +335,7 @@ h2 {
     flex-direction: column;
     color: gray;
     margin: auto;
-    margin-top: 90px;
+    margin-top: 70px;
     margin-bottom: 20px;
     background: linear-gradient(to top, #FF5700 0%, #FF5700 50%, #ffffff 50%, #ffffff 100%);
     -webkit-box-shadow: 6px 16px 36px -17px rgba(69, 69, 69, 1);
@@ -352,6 +368,11 @@ h2 {
     display: flex;
     margin-bottom: 50px;
     align-items: center;
+}
+
+.t2 h4 {
+    font-size: 25px;
+    line-height: 1.0em;
 }
 
 .fa-store {
@@ -396,33 +417,24 @@ h2 {
     height: 270px;
 }
 
-.container {
-    width: 90%;
-    margin: auto;
-}
-
 /* CODIGO DE BARRAS */
 
 /* Sobre */
 
 .banner_sobre {
-    background-image: linear-gradient(rgba(255, 115, 0, 0.5),rgba(255, 174, 0, 0.5)),  url(../img/cestabasica.jpg); 
+    background-image: linear-gradient(rgba(255, 60, 0, 0.100), rgba(252, 0, 0, 0.822)), url(../img/cestabasica.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px; 
+    height: 260px;
     position: relative;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
+}
 
 .sobre_h1 {
-    position: absolute;
     color: white;
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
-} 
+}
 
 .sobre_texto {
     margin-top: 40px;
@@ -433,17 +445,57 @@ h2 {
 
 /* Sobre */
 
-/* Codigo Vitao Ousado*/
 
-.container {
+
+/* Adicionar Produto */
+
+.card_add_produto {
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    -webkit-box-shadow: 9px 13px 300px 0px rgba(176, 176, 176, 0.5);
+    -moz-box-shadow: 9px 13px 300px 0px rgba(176, 176, 176, 0.5);
+    box-shadow: 9px 13px 300px 0px rgba(176, 176, 176, 0.5);
     margin: auto;
-    width: 90vw;
+    margin-top: 30px;   
+    margin-bottom: 30px;
+    display: flex;
+    color: gray;
+    border-radius: 4px;
+}
+.form_add_produto {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.form_add_produto input {
+    height: 30px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 9px 13px 300px 0px rgba(176, 176, 176, 0.5);
+    -moz-box-shadow: 9px 13px 300px 0px rgba(176, 176, 176, 0.5);
+    box-shadow: 9px 13px 300px 0px rgba(176, 176, 176, 0.5);
+}
+.form_add_produto p {
+    color: var(--laranja-valer);
+    margin-bottom: 10px;
+}
+.form_add_produto .img_add {
+    height: 110px;
+    width: 110px;
+}
+.form_add_produto button {
+    height: 40px;
+    width: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background-color: var(--laranja-valer);
 }
 
-body {
-    background-color: var(--cinza-fumaca);
-    font-family: lato;
-}
 
 /*--------------------------------------------*/
 
@@ -462,6 +514,9 @@ body {
     .barra-desktop {
         display: none;
     }
+    .sobre_texto {
+        margin-bottom: 100px;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -477,6 +532,30 @@ body {
         width: 300px;
         height: 300px;
     }
+    .redondo2 {
+        width: 400px;
+        height: 400px;
+        margin-top: 40px;
+    }
+    .t1 {
+        margin-top: 55px;
+    }
+    .t2 {
+        margin-bottom: 80px;
+    }
+    .t1 .fa-shopping-bag {
+        font-size: 70px;
+    }
+    .t2 .fa-store {
+        font-size: 70px;
+    }
+    .t2 h4 {
+        font-size: 30px;
+    }
+    .t1 h4 {
+        font-size: 30px;
+    }
+    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -487,6 +566,31 @@ body {
         bottom: 0;
         width: 100%;
     }
+    .redondo2 {
+        width: 450px;
+        height: 450px;
+        margin-top: 35px;
+        transform: rotate(-8deg);
+    }
+    .t1 {
+        margin-top: 65px;
+    }
+    .t2 {
+        margin-bottom: 85px;
+    }
+    .redondo {
+        margin-top: 80px;
+        width: 400px;
+        height: 400px;
+    }
+    .buscatexto {
+        margin-top: 80px;
+        color: white;
+    }
+    .redondo i {
+        margin-bottom: 80px;
+    }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -499,19 +603,22 @@ body {
         width: 70vw;
     }
     .redondo2 {
-        width: 700px;
-        height: 600px;
-        margin-top: 85px;
+        width: 500px;
+        height: 500px;
+        margin-top: 45px;
         transform: rotate(-4deg);
+    }
+    .t1 h4 {
+        margin-left: 20px;
+        font-size: 30px;
+        line-height: 1.0em;
+        color: #FF5700;
     }
     .t1 {
         margin-top: 85px;
     }
-    .t1 h4 {
-        font-size: 30px;
-    }
     .t1 .fa-shopping-bag {
-        font-size: 135px;
+        font-size: 90px;
     }
     .t2 {
         margin-bottom: 85px;
@@ -520,11 +627,11 @@ body {
         font-size: 30px;
     }
     .t2 .fa-store {
-        font-size: 135px;
+        font-size: 90px;
     }
     .redondo {
-        width: 500px;
-        height: 400px;
+        width: 420px;
+        height: 420px;
         margin-top: 50px;
     }
     .fundoteste {
@@ -540,7 +647,7 @@ body {
         margin-top: 20px;
     }
     .buscatexto {
-        margin-top: 170px;
+        margin-top: 40px;
     }
 }
 
@@ -557,28 +664,28 @@ body {
         background-position: center;
     }
     .redondo2 {
-        width: 750px;
-        height: 600px;
-        margin-top: 85px;
+        width: 500px;
+        height: 500px;
+        margin-top: 80px;
         transform: rotate(-4deg);
     }
     .t1 {
         margin-top: 80px;
     }
     .t1 h4 {
-        font-size: 40px;
+        font-size: 30px;
     }
     .t1 .fa-shopping-bag {
-        font-size: 150px;
+        font-size: 100px;
     }
     .t2 {
         margin-bottom: 80px;
     }
     .t2 h4 {
-        font-size: 40px;
+        font-size: 30px;
     }
     .t2 .fa-store {
-        font-size: 150px;
+        font-size: 100px;
     }
     h1 {
         margin: 10px;
