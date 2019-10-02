@@ -61,29 +61,55 @@
         <div class="container">
             <h1>Adicionar Produto</h1>
             <div class="card_add_produto">
+
                 <form class="form_add_produto">
-                    <p>Nome do Produto</p>
-                    <input>
-                    <p>Imagem do Produto</p>
-                    <input class="img_add">
+                    <label>
+                        <p>Nome Do Produto</p>
+                        <input type="text" name="add_nome" id="add_nomeid" placeholder="Digite seu Nome">
+                    </label>
+                    <label>
+                        <p>Imagem do Produto</p>
+                        <input class="img_add" type="image" id="add_imgid">
+                    </label>
                 </form>
+
+                <form class="form_add_produto" oninput="x.value=parseInt(a.value)">
+                    <label>
+                        <p>Data de Validade</p>
+                        <input type="date" name="add_data" id="add_dataid">
+                    </label>
+                    <label>
+                        <p>Preço</p>
+                        <input type="number" placeholder="Valor do produto">
+                    </label>
+                    <label>
+                        <p>Desconto</p>
+                        <input type="range" value="0" name="a" id="a"> 
+                        <output name="x" for="a"></output>
+                    </label>
+                </form>
+
                 <form class="form_add_produto">
-                    <p>Data de Validade</p>
-                    <input>
-                    <p>Preço</p>
-                    <input>
-                    <p>Desconto</p>
-                    <input>
+                    <label>
+                        <p>Quantidade</p>
+                        <input type="number" name="add_quantidade" id="add_quantidadeid" placeholder="Produtos em estoque">
+                    </label>
+                    <label>
+                        <p>Doação ?</p>
+                        <select id="resposta">
+                            <option>Escolha uma Resposta</option>
+                            <option>Sim</option>
+                            <option>Não</option>
+                        </select>
+                        
+                    </label>
+                    <label>
+                        <p>Descrição</p>
+                        <input type="text" name="add_descricao" id="add_descricaoid" placeholder="Digite algumas informções sobre o produto!">
+                    </label>
+                    <button type="submit" onclick="alert('Você acabou de finalizar o cadastro !')">Adicionar</button>
                 </form>
-                <form class="form_add_produto">
-                    <p>Quantidade</p>
-                    <input>
-                    <p>Doação ?</p>
-                    <input>
-                    <p>Descrição</p>
-                    <input>
-                    <button type="submit">Adicionar</button>
-                </form>
+
             </div>
         </div>
     </main>

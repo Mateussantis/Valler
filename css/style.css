@@ -26,165 +26,12 @@
 body {
     background-color: var(--cinza-fumaca);
     font-family: lato;
+    color: black;
 }
 
 
-
-/*HEADER----------------------------------------------*/
-
-header nav ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo-valer {
-    margin: 20px 30px 20px 0px;
-    height: 30px;
-}
-
-/* HEADER*/
-
-/* MENU */
-
-header nav ul li, a {
-    font-size: 0.9em;
-    font-family: lato;
-    color: white;
-    list-style-type: none;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-header nav ul li a {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 5px 0px 5px 0px;
-}
-
-.login a {
-    display: flex;
-    flex-direction: row;
-}
-
-.barra-desktop {
-    justify-content: space-between;
-    display: flex;
-}
-
-.barra-cima {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    width: 100%;
-}
-
-.barra-desktop nav ul li a {
-    color: var(--cinza-fonte);
-}
-
-.barra-desktop nav ul .login {
-    color: var(--laranja-valer);
-}
-
-.barra-desktop nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.barra-desktop nav ul li:hover {
-    border-bottom: solid 2px var(--laranja-valer);
-}
-
-.sub-barra ul li a {
-    color: var(--laranja-valer);
-}
-
-.background-laranja {
-    background-color: var(--laranja-valer);
-}
-
-.background-branco {
-    background-color: white;
-}
-
-.categorias {
-    background-color: white;
-    padding: 30px;
-    border: none;
-    cursor: pointer;
-    color: var(--laranja-valer);
-}
-
-.barra_pesquisa {
-    border: solid 1px white;
-    border-radius: 30px;
-    padding: 10px;
-    color: var(--cinza-fonte);
-    background-color: white;
-    flex-grow: 1;
-    margin: 0px 200px 0px 20px;
-}
-
-.barra_pesquisa input {
-    background-color: transparent;
-    color: var(--cinza-fonte);
-    border: none;
-}
-
-/* Final MENU*/
-
-/*Barra de pesquisa e botão de categorias mobile*/
-
-.barra_pesquisa-mobile {
-    display: flex;
-    border: solid 1px var(--cinza-fumaca);
-    border-radius: 30px;
-    background-color: var(--cinza-fumaca);
-    padding: 8px;
-    flex-grow: 1;
-    margin-right: 20px;
-}
-
-.barra_pesquisa-mobile input {
-    background-color: transparent;
-    border: none;
-}
-
-.barra_pesquisa-mobile i {
-    color: var(--cinza-fonte);
-    margin-right: 8px;
-}
-
-.search-cat a i {
-    margin-right: 8px;
-}
-
-.search-cat {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-.search-cat a {
-    border: solid 1px var(--laranja-valer);
-    border-radius: 30px;
-    background-color: var(--laranja-valer);
-    padding: 8px;
-}
-
-/*Barra de pesquisa e botão de categorias mobile*/
 
 /*----------------------------------------------*/
-
-body {
-    color: black;
-    font-family: 'Lato', sans-serif;
-}
 
 
 
@@ -478,13 +325,22 @@ h2 {
     -moz-box-shadow: 9px 13px 300px 0px rgba(176, 176, 176, 0.5);
     box-shadow: 9px 13px 300px 0px rgba(176, 176, 176, 0.5);
 }
-.form_add_produto p {
+.form_add_produto label {
     color: var(--laranja-valer);
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+}
+.form_add_produto p {
     margin-bottom: 10px;
 }
 .form_add_produto .img_add {
-    height: 110px;
+    height: 50px;
     width: 110px;
+    background-color: #FF5700;
+    padding-left: 50px;
+    padding-top: 30px;
 }
 .form_add_produto button {
     height: 40px;
@@ -494,6 +350,13 @@ h2 {
     font-size: 15px;
     color: white;
     background-color: var(--laranja-valer);
+}
+output {
+    text-align: center;
+}
+
+.form_add_produto input::placeholder {
+    padding: 5px;
 }
 
 
@@ -506,28 +369,12 @@ h2 {
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
-    header {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
-    .barra-desktop {
-        display: none;
-    }
     .sobre_texto {
         margin-bottom: 100px;
     }
 }
 
 @media only screen and (max-width: 700px) {
-    header {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
-    .barra-desktop {
-        display: none;
-    }
     .redondo {
         width: 300px;
         height: 300px;
@@ -561,11 +408,6 @@ h2 {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 600px) {
-    .barra-mobile {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
     .redondo2 {
         width: 450px;
         height: 450px;
@@ -596,9 +438,6 @@ h2 {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .barra-mobile {
-        display: none;
-    }
     .container {
         width: 70vw;
     }
