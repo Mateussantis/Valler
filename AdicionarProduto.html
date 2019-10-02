@@ -82,17 +82,18 @@
                         <p>Preço</p>
                         <input type="number" placeholder="Valor do produto">
                     </label>
-                    <label>
+                    <label class="label_desconto">
                         <p>Desconto</p>
-                        <input type="range" value="0" name="a" id="a"> 
+                        <input type="range" value="0" name="a" id="a">
                         <output name="x" for="a"></output>
                     </label>
                 </form>
-
-                <form class="form_add_produto">
+                
+                <form class="form_add_produto o">
                     <label>
                         <p>Quantidade</p>
-                        <input type="number" name="add_quantidade" id="add_quantidadeid" placeholder="Produtos em estoque">
+                        <input type="number" name="add_quantidade" id="add_quantidadeid"
+                            placeholder="Produtos em estoque">
                     </label>
                     <label>
                         <p>Doação ?</p>
@@ -101,11 +102,11 @@
                             <option>Sim</option>
                             <option>Não</option>
                         </select>
-                        
                     </label>
                     <label>
                         <p>Descrição</p>
-                        <input type="text" name="add_descricao" id="add_descricaoid" placeholder="Digite algumas informções sobre o produto!">
+                        <input type="text" name="add_descricao" id="add_descricaoid"
+                            placeholder="Digite algumas informções sobre o produto!">
                     </label>
                     <button type="submit" onclick="alert('Você acabou de finalizar o cadastro !')">Adicionar</button>
                 </form>
